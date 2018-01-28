@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GroupSettings>
+    <GroupName>Default Group Name</GroupName>
+    <GroupType>None</GroupType>
+    <SerializableGroupNameColor>Green</SerializableGroupNameColor>
+    <SerializableGroupNameBackgroundColor>Lime</SerializableGroupNameBackgroundColor>
+    <SerializableGroupNameFont>Arial, 9.75pt, style=Bold</SerializableGroupNameFont>
+    <SerializableShopNameColor>Navy</SerializableShopNameColor>
+    <SerializableShopNameFont>Monotype Corsiva, 9.75pt, style=Italic</SerializableShopNameFont>
+    <SerializableShopDescriptionColor>255, 0, 128</SerializableShopDescriptionColor>
+    <SerializableShopDescriptionFont>Nina, 12pt</SerializableShopDescriptionFont>
+    <SerializableShopBackgroundColor>Silver</SerializableShopBackgroundColor>
+    <SerializableLogoSize>10, 10</SerializableLogoSize>
+    <SerializableShopControlSize>300, 100</SerializableShopControlSize>
+</GroupSettings>

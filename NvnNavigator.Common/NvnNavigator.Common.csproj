@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6BAC8DF5-891D-4949-826E-6FE90BE216FA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NvnNavigator.Common</RootNamespace>
+    <AssemblyName>NvnNavigator.Common</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetSkin.SkinControls, Version=1.0.2129.18605, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NvnNavigator.References\DotNetSkin.SkinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassDefinitions.cs" />
+    <Compile Include="Enumerations.cs" />
+    <Compile Include="Forms\Hotspots\HotSpotImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Hotspots\HotSpotImageForm.Designer.cs">
+      <DependentUpon>HotSpotImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RealNavigationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RealNavigationForm.Designer.cs">
+      <DependentUpon>RealNavigationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RecentFilesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RecentFilesForm.Designer.cs">
+      <DependentUpon>RecentFilesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopListing\AddEditListingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopListing\AddEditListingForm.Designer.cs">
+      <DependentUpon>AddEditListingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\CreateGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\CreateGroupForm.Designer.cs">
+      <DependentUpon>CreateGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\GroupSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\GroupSettingsForm.Designer.cs">
+      <DependentUpon>GroupSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\RemoveGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\RemoveGroupForm.Designer.cs">
+      <DependentUpon>RemoveGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\RenameGroupForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ShopListing\CategoryMng\RenameGroupForm.Designer.cs">
+      <DependentUpon>RenameGroupForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotspotViewCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotspotViewCtrl.Designer.cs">
+      <DependentUpon>HotspotViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Layout\LayoutSettingsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Layout\LayoutSettingsCtrl.Designer.cs">
+      <DependentUpon>LayoutSettingsCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdConfig\AdConfigContainerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdConfig\AdConfigContainerCtrl.Designer.cs">
+      <DependentUpon>AdConfigContainerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdConfig\AdConfigCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdConfig\AdConfigCtrl.Designer.cs">
+      <DependentUpon>AdConfigCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdConfig\AdConfigItemCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdConfig\AdConfigItemCtrl.Designer.cs">
+      <DependentUpon>AdConfigItemCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdViewCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Advertisements\AdViewCtrl.Designer.cs">
+      <DependentUpon>AdViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotSpotContainerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotSpotContainerCtrl.Designer.cs">
+      <DependentUpon>HotSpotContainerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotSpotCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotSpotCtrl.Designer.cs">
+      <DependentUpon>HotSpotCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotSpotItemCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Hotspots\HotSpotItemCtrl.Designer.cs">
+      <DependentUpon>HotSpotItemCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Layout\LayoutViewCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Layout\LayoutViewCtrl.Designer .cs">
+      <DependentUpon>LayoutViewCtrl.cs</DependentUpon>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Logo\LogoConfigCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Logo\LogoConfigCtrl.Designer.cs">
+      <DependentUpon>LogoConfigCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Logo\LogoViewCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Logo\LogoViewCtrl.Designer.cs">
+      <DependentUpon>LogoViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Misc\ApplicationNameCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Misc\ApplicationNameCtrl.Designer.cs">
+      <DependentUpon>ApplicationNameCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Misc\FloorsCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\Misc\FloorsCtrl.Designer.cs">
+      <DependentUpon>FloorsCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\Config\ListingConfigCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\Config\ListingConfigCtrl.Designer.cs">
+      <DependentUpon>ListingConfigCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\Config\ListingConfigItemCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\Config\ListingConfigItemCtrl.Designer.cs">
+      <DependentUpon>ListingConfigItemCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingContainerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingContainerCtrl.Designer.cs">
+      <DependentUpon>ListingContainerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewContainerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewContainerCtrl.Designer.cs">
+      <DependentUpon>ListingViewContainerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewCtrl.Designer.cs">
+      <DependentUpon>ListingViewCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewGroupCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewGroupCtrl.Designer.cs">
+      <DependentUpon>ListingViewGroupCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewItemCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ShopListing\ListingView\ListingViewItemCtrl.Designer.cs">
+      <DependentUpon>ListingViewItemCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ImageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ImageForm.Designer.cs">
+      <DependentUpon>ImageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NavigatorMapCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NavigatorMapCtrl.Designer.cs">
+      <DependentUpon>NavigatorMapCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Hotspots\HotSpotImageForm.resx">
+      <DependentUpon>HotSpotImageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RealNavigationForm.resx">
+      <DependentUpon>RealNavigationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RecentFilesForm.resx">
+      <DependentUpon>RecentFilesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopListing\AddEditListingForm.resx">
+      <DependentUpon>AddEditListingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopListing\CategoryMng\CreateGroupForm.resx">
+      <DependentUpon>CreateGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopListing\CategoryMng\GroupSettingsForm.resx">
+      <DependentUpon>GroupSettingsForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopListing\CategoryMng\RemoveGroupForm.resx">
+      <DependentUpon>RemoveGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ShopListing\CategoryMng\RenameGroupForm.resx">
+      <DependentUpon>RenameGroupForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Hotspots\HotspotViewCtrl.resx">
+      <DependentUpon>HotspotViewCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Layout\LayoutSettingsCtrl.resx">
+      <DependentUpon>LayoutSettingsCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Advertisements\AdConfig\AdConfigContainerCtrl.resx">
+      <DependentUpon>AdConfigContainerCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Advertisements\AdConfig\AdConfigCtrl.resx">
+      <DependentUpon>AdConfigCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Advertisements\AdConfig\AdConfigItemCtrl.resx">
+      <DependentUpon>AdConfigItemCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Advertisements\AdViewCtrl.resx">
+      <DependentUpon>AdViewCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Hotspots\HotSpotContainerCtrl.resx">
+      <DependentUpon>HotSpotContainerCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Hotspots\HotSpotCtrl.resx">
+      <DependentUpon>HotSpotCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Hotspots\HotSpotItemCtrl.resx">
+      <DependentUpon>HotSpotItemCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Layout\LayoutViewCtrl.resx">
+      <DependentUpon>LayoutViewCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Logo\LogoConfigCtrl.resx">
+      <DependentUpon>LogoConfigCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Logo\LogoViewCtrl.resx">
+      <DependentUpon>LogoViewCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Misc\ApplicationNameCtrl.resx">
+      <DependentUpon>ApplicationNameCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\Misc\FloorsCtrl.resx">
+      <DependentUpon>FloorsCtrl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\Config\ListingConfigCtrl.resx">
+      <DependentUpon>ListingConfigCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\Config\ListingConfigItemCtrl.resx">
+      <DependentUpon>ListingConfigItemCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\ListingContainerCtrl.resx">
+      <DependentUpon>ListingContainerCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\ListingView\ListingViewContainerCtrl.resx">
+      <DependentUpon>ListingViewContainerCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\ListingView\ListingViewCtrl.resx">
+      <DependentUpon>ListingViewCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\ListingView\ListingViewGroupCtrl.resx">
+      <DependentUpon>ListingViewGroupCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ShopListing\ListingView\ListingViewItemCtrl.resx">
+      <DependentUpon>ListingViewItemCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ImageForm.resx">
+      <DependentUpon>ImageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NavigationViewerCtrl.resx">
+      <DependentUpon>NavigationViewerCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\NavigatorMapCtrl.resx">
+      <DependentUpon>NavigatorMapCtrl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\VirtualKeyboard\Keyboard.resx">
+      <DependentUpon>Keyboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="UserControls\NavigationViewerCtrl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\NavigationViewerCtrl.Designer.cs">
+      <DependentUpon>NavigationViewerCtrl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VirtualKeyboard\Keyboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\VirtualKeyboard\Keyboard.designer.cs">
+      <DependentUpon>Keyboard.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\currentlocstar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchstar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youarehere.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaultlogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefaultGroupSettings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NavUpGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shift_down_white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\caps_down_white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_alphabetical.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_kids_lower.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_kids_upper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboard_white.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adsLayoutSettings.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapLayoutSettings.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\viewLayoutSettings.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
